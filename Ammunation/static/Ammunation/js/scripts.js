@@ -1,28 +1,3 @@
-
-
-
-function validarGender() {
-    const opciones = document.getElementsByName("inlineRadioOptions");
-    let mensajeGender = document.getElementById("mensajeGender");
-    let seleccionado = false;
-
-    for (const opcion of opciones) {
-        if (opcion.checked) {
-            seleccionado = true;
-            mensajeGender.textContent = "";
-            break;
-        }
-    }
-
-    if (!seleccionado) {
-        mensajeGender.textContent = "Seleccione una opción";
-        return false;        
-    }
-
-    return true;
-}
-
-
 document.addEventListener("DOMContentLoaded", function() {
     if (window.location.href.match(/register\.html$/)) {
       document.getElementById("pass").addEventListener("keyup", validarPass);
