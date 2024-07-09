@@ -1,6 +1,6 @@
 from django.urls import include, path
 from .views import index, adminGuns, administrador, modificararma, deleteGuns, deleteUser, descriptionGuns, \
-editarPerfil, olvidarcontraseña, verificaremail, register, editarusuario, perfildeusuario, vistaCompras, vistaVender, \
+editarPerfil, olvidarcontraseña, verificarcorreo, register, editarusuario, perfildeusuario, vistaCompras, vistaVender, \
 vistaVentas, cerrar_sesion, add_to_cart, update_cart_item, remove_from_cart, carrito, process_payment
 from django.conf import settings
 from django.conf.urls.static import static
@@ -20,7 +20,7 @@ urlpatterns = [
     path('descriptionGuns/<id>', descriptionGuns, name='descriptionGuns'),
     path('editarPerfil/', editarPerfil, name='editarPerfil'),
     path('olvidarcontraseña/', olvidarcontraseña, name='olvidarcontraseña'),
-    path('verificaremail/', verificaremail, name='verificaremail'),
+    path('verificarcorreo/', verificarcorreo, name='verificarcorreo'),
     path('register/', register, name='register'),
     path('editarusuario/<id>', editarusuario, name='editarusuario'),
     path('perfildeusuario/', perfildeusuario, name='perfildeusuario'),

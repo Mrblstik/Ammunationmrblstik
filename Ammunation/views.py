@@ -253,8 +253,8 @@ def olvidarcontraseña(request):
     return render(request,'Ammunation/olvidarcontraseña.html')
 
 
-def verificaremail(request):
-    return render(request,'Ammunation/verificaremail.html')
+def verificarcorreo(request):
+    return render(request,'Ammunation/verificarcorreo.html')
 
 def register(request):
     form=UserForm()
